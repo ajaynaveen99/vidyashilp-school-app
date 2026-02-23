@@ -1,0 +1,101 @@
+.read-page {
+  background: #d89221;
+  padding: 60px 80px;
+}
+
+.read-container {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  color: #000;
+}
+.read-img1 >img {
+    width: 100%;
+    
+    display: block;
+}
+
+.read-container h1 {
+  font-size: 27px;
+  letter-spacing: 2px;
+}
+
+.read-container h2 {
+  font-size: 34px;
+  margin-bottom: 25px;
+}
+
+.read-quote {
+  font-style: italic;
+  font-weight: 500;
+  font-size: medium;
+  margin-bottom: 25px;
+}
+
+.read-text {
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 30px;
+  font-size: larger;
+  
+}
+
+.start-btn {
+  background: #1f2f5c;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.start-btn:hover {
+  background: #000;
+}
+
+.read-layout {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.read-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.read-text-box {
+  background: #eee;
+  padding: 60px;
+  gap:40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.read-text-box h3 {
+  font-size: 39px;
+  text-align: center;
+  
+  margin-bottom: 0px;
+
+}
+
+.read-text-box p {
+  line-height: 1.8;
+  font-size: x-large;
+ text-align: justify;
+  ;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .read-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .read-page {
+    padding: 40px 20px;
+  }
+}

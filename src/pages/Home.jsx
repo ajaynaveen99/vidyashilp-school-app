@@ -1,7 +1,4 @@
 import "../pages/Home.css";
-import Header from "../components/layout/Header";
-import Footer from "../components/layout/Footer";
-
 import hero from "../assets/images/hero.avif";
 import admission from "../assets/images/admission.avif";
 import img1 from "../assets/images/img1.avif"
@@ -11,13 +8,16 @@ import vissionImg from "../assets/images/vission.avif"
 import news1 from "../assets/images/news1.avif"
 import news2 from "../assets/images/news2.avif"
 import news3 from "../assets/images/news3.avif"
+import { Link } from "react-router-dom";
+
+
 
 
 
 const Home = () => {
   return (
     <>
-      <Header />
+     
 
       {/* HERO SECTION */}
       <section className="hero">
@@ -44,7 +44,9 @@ const Home = () => {
     Our 3 acres lush green campus with state-of-the-art infrastructure and sports facilities has been conceptualized to offer students a beautiful landscape in which they live, learn, discover and thrive.
    
     At Vidyashilp, we believe that educating children is a great responsibility and privilege in equal measure. We begin with seeding the desire for lifelong learning in every student. We strive to instill in our students a sense of respect for diversity, an appreciation of what it takes to be a genuine global citizen, the skills to both follow and lead and ultimately the confidence to achieve academic and personal success.
-    <a href="#" className="read-more"> Read more.....</a>
+   <Link to="/about-school" className="read-more">
+  Read more.....
+</Link>
   </p>
 
   {/* IMAGE SECTION */}
@@ -233,7 +235,7 @@ const Home = () => {
   </div>
 </section>
 
-      <Footer />
+
     </>
   );
 };
