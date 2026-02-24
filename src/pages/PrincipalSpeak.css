@@ -1,0 +1,187 @@
+/* ===============================
+   HERO
+================================= */
+
+.principal-hero {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.principal-overlay {
+  background: rgba(0, 0, 0, 0.55);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.principal-overlay h1 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+/* ===============================
+   MAIN CONTAINER
+================================= */
+
+/* ===============================
+   PRINCIPAL CARD
+================================= */
+
+.principal-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  margin-bottom: 60px;
+}
+
+/* Hover effect */
+
+.principal-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.18);
+}
+
+/* LEFT SIDE */
+
+.principal-left {
+    border: #acc8ea 10px solid;
+    border-radius: 10px;
+    padding: 50px;
+    
+  flex: 1;
+}
+
+.school-brand {
+  display: flex;
+  align-items: center;
+  /* gap: 15px; */
+  margin-bottom: 35px;
+}
+
+.school-logo {
+  height: 120px;
+}
+
+.school-brand h3 {
+  font-size: 20px;
+  color: #1f2f5c;
+}
+
+.principal-details h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.designation {
+  font-size: 17px;
+  text-align: center;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* RIGHT SIDE */
+
+.principal-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.principal-right img {
+  width: 100%;
+  max-width: 380px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+  border: 6px solid transparent;
+  background: linear-gradient(45deg, #00c6ff, #0072ff) border-box;
+}
+
+/* Image hover glow */
+
+.principal-card:hover .principal-right img {
+  transform: scale(1.05);
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 992px) {
+
+  .principal-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .principal-right img {
+    height: 350px;
+  }
+
+  .school-brand {
+    justify-content: center;
+  }
+}
+
+/* ===============================
+   MESSAGE CARD
+================================= */
+
+.message-card {
+  background: #f5e7d2;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  line-height: 1.8;
+  transition: all 0.4s ease;
+}
+
+.message-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2);
+}
+
+.message-card h2 {
+  margin-bottom: 20px;
+  color: #fb9f0a;
+}
+
+.message-card blockquote {
+  margin-top: 25px;
+  font-style: italic;
+  font-weight: 600;
+  color: #444;
+  border-left: 4px solid #e59a22;
+  padding-left: 15px;
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+  .principal-container {
+    padding: 40px 20px;
+  }
+
+  .principal-profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .principal-overlay h1 {
+    font-size: 28px;
+  }
+}

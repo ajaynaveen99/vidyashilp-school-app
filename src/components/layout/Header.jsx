@@ -61,7 +61,7 @@ const Header = () => {
                   </NavLink>
                 </li>
                <li><NavLink to="/quality-policy">Quality Policy</NavLink></li>
-                <li><a href="#">Principal Speak</a></li>
+               <li><NavLink to="/principal-speak">Principal Speak</NavLink></li>
                 <li><a href="#">Board of Directors</a></li>
               </ul>
             )}

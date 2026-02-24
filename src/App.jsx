@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import ReadMore from "./pages/ReadMore";
 import AboutMain from "./pages/AboutMain";
 import QualityPolicy from "./pages/QualityPolicy";
+import PrincipalSpeak from "./pages/PrincipalSpeak";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
   <Route path="about-1" element={<AboutMain />} />
   <Route path="about-school" element={<ReadMore />} />
   <Route path="quality-policy" element={<QualityPolicy />} />
+  <Route path="principal-speak" element={<PrincipalSpeak />} />
  
 
 </Route>
