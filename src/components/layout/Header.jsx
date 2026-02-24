@@ -1,9 +1,26 @@
 import "./Header.css";
 import logo from "../../assets/images/logo.avif";
+import { NavLink, Link, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const Header = () => {
+
+  const [aboutOpen, setAboutOpen] = useState(false);
+  const location = useLocation();
+
+  const toggleAbout = () => {
+    setAboutOpen(!aboutOpen);
+  };
+
+  /* 🔥 Close dropdown on route change */
+  useEffect(() => {
+    setAboutOpen(false);
+  }, [location]);
+
   return (
     <header className="header">
+
       <div className="topbar">
         <div className="contact">
           <span>📞 +91 9480696169</span>
@@ -12,16 +29,52 @@ const Header = () => {
       </div>
 
       <div className="navbar">
-        <img src={logo} alt="logo" className="logo" />
+
+        <Link to="/">
+          <img src={logo} alt="logo" className="logo" />
+        </Link>
 
         <ul className="nav-links">
-          <li>HOME</li>
-          <li>About Us</li>
-          <li>Academics</li>
-          <li>Admissions</li>
-          <li>MANDATORY DISCLOSURE</li>
-          <li>CONTACT</li>
+
+          <li>
+            <NavLink to="/" end>HOME</NavLink>
+          </li>
+
+          {/* ABOUT DROPDOWN */}
+          <li className="dropdown">
+
+            <div className="dropdown-toggle" onClick={toggleAbout}>
+              <NavLink to="/about-1">About Us</NavLink>
+
+              {aboutOpen ? (
+                <FaChevronUp className="arrow-icon" />
+              ) : (
+                <FaChevronDown className="arrow-icon" />
+              )}
+            </div>
+
+            {aboutOpen && (
+              <ul className="dropdown-menu">
+                <li>
+                  <NavLink to="/about-school">
+                    About the School
+                  </NavLink>
+                </li>
+                <li><a href="#">Quality Policy</a></li>
+                <li><a href="#">Principal Speak</a></li>
+                <li><a href="#">Board of Directors</a></li>
+              </ul>
+            )}
+
+          </li>
+
+          <li><a href="#">Academics</a></li>
+          <li><a href="#">Admissions</a></li>
+          <li><a href="#">MANDATORY DISCLOSURE</a></li>
+          <li><a href="#">CONTACT</a></li>
+
         </ul>
+
       </div>
     </header>
   );
