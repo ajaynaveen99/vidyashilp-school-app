@@ -60,7 +60,7 @@ const Header = () => {
                     About the School
                   </NavLink>
                 </li>
-                <li><a href="#">Quality Policy</a></li>
+               <li><NavLink to="/quality-policy">Quality Policy</NavLink></li>
                 <li><a href="#">Principal Speak</a></li>
                 <li><a href="#">Board of Directors</a></li>
               </ul>

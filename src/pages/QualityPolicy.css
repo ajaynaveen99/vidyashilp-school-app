@@ -1,0 +1,124 @@
+/* ===============================
+   HERO
+================================= */
+
+.quality-hero {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.55);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay h1 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #fff;
+  padding-bottom: 8px;
+}
+
+/* ===============================
+   MAIN CONTAINER
+================================= */
+
+.quality-container {
+  padding: 60px 80px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* IMAGE */
+
+.quality-image img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  transition: transform 0.4s ease;
+}
+
+.quality-image img:hover {
+  transform: scale(1.02);
+}
+
+/* INTRO */
+
+.quality-intro {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 50px auto;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* ===============================
+   CARDS
+================================= */
+.quality-text{
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  border-top: 4px solid #e59a22;
+}
+
+.quality-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.quality-card {
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  border-top: 4px solid #e59a22;
+}
+
+.quality-card h3 {
+  margin-bottom: 15px;
+  color: #e59a22;
+  font-size: 20px;
+}
+
+.quality-card ul {
+  line-height: 1.8;
+  padding-left: 18px;
+}
+
+.quality-card li {
+  margin-bottom: 8px;
+}
+
+/* Hover Effect */
+
+.quality-card:hover , .quality-text:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+  background: #fffaf2;
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+  .quality-container {
+    padding: 40px 20px;
+  }
+
+  .overlay h1 {
+    font-size: 28px;
+  }
+}

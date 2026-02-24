@@ -3,6 +3,8 @@ import Layout from "./components/layout/Layout";
 import Home from "./pages/Home";
 import ReadMore from "./pages/ReadMore";
 import AboutMain from "./pages/AboutMain";
+import QualityPolicy from "./pages/QualityPolicy";
+
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
 
   <Route path="about-1" element={<AboutMain />} />
   <Route path="about-school" element={<ReadMore />} />
+  <Route path="quality-policy" element={<QualityPolicy />} />
+ 
 
 </Route>
 
