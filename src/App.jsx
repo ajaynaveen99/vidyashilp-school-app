@@ -5,6 +5,7 @@ import ReadMore from "./pages/ReadMore";
 import AboutMain from "./pages/AboutMain";
 import QualityPolicy from "./pages/QualityPolicy";
 import PrincipalSpeak from "./pages/PrincipalSpeak";
+import BoardDirectors from "./pages/BoardDirectors";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
   <Route path="about-school" element={<ReadMore />} />
   <Route path="quality-policy" element={<QualityPolicy />} />
   <Route path="principal-speak" element={<PrincipalSpeak />} />
+  <Route path="board-directors" element={<BoardDirectors />} />
  
 
 </Route>
