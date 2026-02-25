@@ -1,0 +1,197 @@
+.academics-page {
+  font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f9fcfd;
+}
+
+/* SLIDER */
+.slider {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.left-arrow,
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.left-arrow { left: 20px; }
+.right-arrow { right: 20px; }
+
+/* SECTION TITLE */
+.section-title {
+  font-size: 34px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 700;
+  color: #1f2f5c;
+}
+
+/* INTRO CARD */
+.intro-card {
+  max-width: 900px;
+  margin: 0 auto 30px;
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 30px;
+  background: #e6e7ec;
+  border-radius: 10px;
+  line-height: 1.8;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* CAMPUS CARD */
+.campus-card {
+  max-width: 1000px;
+  margin: 0 auto 50px;
+  padding: 40px;
+  text-align: justify;
+  font-weight: 300;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: linear-gradient(135deg, #c1dbdb, #f2f6ff);
+  border-left: 5px solid #e59a22;
+  border-radius: 10px;
+  line-height: 1.9;
+}
+
+/* FEATURE GRID */
+.academic-feature-grid {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    align-items: center;
+  gap: 20px;
+  margin: 45px  70px;
+}
+
+.feature-card {
+  background: #e0a62a;
+  padding: 20px;
+  width: 100%;
+  max-width: 285px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+
+.feature-card:hover {
+  background: #e59a22;
+  color: #fff;
+  transform: translateY(-6px);
+}
+
+/* MISSION HIGHLIGHT */
+.mission-highlight {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  padding: 30px;
+  background: #1f2f5c;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+/* ADMISSION CTA */
+.admission-cta {
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #e59a22, #ffb347);
+  border-radius: 12px;
+  color: #fff;
+  max-width: 700px;
+  margin: 0 auto 60px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.admission-cta h3 {
+  margin-bottom: 15px;
+}
+
+.admission-cta .details {
+  margin-top: 15px;
+}
+
+.apply-btn {
+  margin-top: 20px;
+  padding: 12px 28px;
+  background: #1f2f5c;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.apply-btn:hover {
+  background: #000;
+}
+
+/* LAB GRID */
+.lab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 60px 80px;
+}
+
+.lab-card {
+  background: #fff;
+  padding: 30px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.lab-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.lab-card img {
+  height: 70px;
+  margin-bottom: 15px;
+}
+
+.lab-card h4 {
+  margin-bottom: 10px;
+  color: #e59a22;
+}
+
+.lab-card p {
+  font-size: 14px;
+    color: #555;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .academic-content,
+  .lab-grid {
+    padding: 40px 20px;
+  }
+}

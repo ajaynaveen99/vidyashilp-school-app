@@ -62,13 +62,13 @@ const Header = () => {
                 </li>
                <li><NavLink to="/quality-policy">Quality Policy</NavLink></li>
                <li><NavLink to="/principal-speak">Principal Speak</NavLink></li>
-              <NavLink to="/board-directors">Board of Directors</NavLink>
+               <li><NavLink to="/board-directors">Board of Directors</NavLink></li>
               </ul>
             )}
 
           </li>
 
-          <li><a href="#">Academics</a></li>
+       <li><NavLink to="/academics">Academics</NavLink></li> 
           <li><a href="#">Admissions</a></li>
           <li><a href="#">MANDATORY DISCLOSURE</a></li>
           <li><a href="#">CONTACT</a></li>

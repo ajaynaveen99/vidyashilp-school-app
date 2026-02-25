@@ -6,6 +6,7 @@ import AboutMain from "./pages/AboutMain";
 import QualityPolicy from "./pages/QualityPolicy";
 import PrincipalSpeak from "./pages/PrincipalSpeak";
 import BoardDirectors from "./pages/BoardDirectors";
+import Academics from "./pages/Academics";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
   <Route path="quality-policy" element={<QualityPolicy />} />
   <Route path="principal-speak" element={<PrincipalSpeak />} />
   <Route path="board-directors" element={<BoardDirectors />} />
+  <Route path="academics" element={<Academics />} />
  
 
 </Route>
