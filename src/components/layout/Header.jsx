@@ -69,8 +69,8 @@ const Header = () => {
           </li>
 
        <li><NavLink to="/academics">Academics</NavLink></li> 
-          <li><a href="#">Admissions</a></li>
-          <li><a href="#">MANDATORY DISCLOSURE</a></li>
+          <li><NavLink to="/admissions">Admissions</NavLink></li>
+          <li><NavLink to="/mandatory-disclosure">MANDATORY DISCLOSURE</NavLink></li>
           <li><a href="#">CONTACT</a></li>
 
         </ul>

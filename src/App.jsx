@@ -7,6 +7,8 @@ import QualityPolicy from "./pages/QualityPolicy";
 import PrincipalSpeak from "./pages/PrincipalSpeak";
 import BoardDirectors from "./pages/BoardDirectors";
 import Academics from "./pages/Academics";
+import Admissions from "./pages/Admissions";
+import MandatoryDisclosure from "./pages/MandatoryDisclosure";
 
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
   <Route path="principal-speak" element={<PrincipalSpeak />} />
   <Route path="board-directors" element={<BoardDirectors />} />
   <Route path="academics" element={<Academics />} />
+  <Route path="admissions" element={<Admissions />} />
+  <Route path="mandatory-disclosure" element={<MandatoryDisclosure />} />
  
 
 </Route>

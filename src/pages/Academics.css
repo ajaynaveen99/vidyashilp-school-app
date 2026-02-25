@@ -82,9 +82,10 @@
 }
 
 .feature-card {
-  background: #e0a62a;
+  background: #87c6f7;
   padding: 20px;
   width: 100%;
+
   max-width: 285px;
   text-align: center;
   border-radius: 8px;
@@ -94,8 +95,8 @@
 }
 
 .feature-card:hover {
-  background: #e59a22;
-  color: #fff;
+  background: #0fb3ea;
+  color: #1f2f5c;
   transform: translateY(-6px);
 }
 
@@ -171,19 +172,23 @@
 }
 
 .lab-card img {
-  height: 70px;
+  height: 90px;
+
+    margin-bottom: 20px;
+
   margin-bottom: 15px;
 }
 
 .lab-card h4 {
   margin-bottom: 10px;
   color: #e59a22;
+  font-size: larger;
 }
 
 .lab-card p {
   font-size: 14px;
     color: #555;
-    font-weight: 400;
+    font-weight: 600;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
 }

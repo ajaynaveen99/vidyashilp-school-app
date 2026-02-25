@@ -1,0 +1,129 @@
+/* =========================
+   HERO SECTION
+========================= */
+
+.disclosure-hero {
+  height: 320px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.65);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay h1 {
+  color: #ffffff;
+  font-size: 38px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* =========================
+   SECTION WRAPPER
+========================= */
+
+.disclosure-section {
+  padding: 20px 50px;
+}
+
+.disclosure-section h2 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #1f2f5c;
+  border-left: 4px solid #e59a22;
+  padding-left: 12px;
+}
+
+/* =========================
+   TABLE STYLING
+========================= */
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  font-size: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.styled-table thead {
+  background-color: #f4f6fa;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 14px;
+  border: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+.styled-table th {
+  font-weight: 600;
+  color: #333;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f1f7ff;
+  transition: 0.3s ease;
+}
+
+/* =========================
+   VIEW BUTTON
+========================= */
+
+.view-btn {
+  background: #2d8be6;
+  color: #fff;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.3s ease;
+}
+
+.view-btn:hover {
+  background: #1f6fc1;
+  transform: scale(1.05);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+  .disclosure-section {
+    padding: 50px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .disclosure-section {
+    padding: 40px 20px;
+  }
+
+  .overlay h1 {
+    font-size: 26px;
+  }
+
+  .styled-table {
+    font-size: 12px;
+  }
+
+  .styled-table th,
+  .styled-table td {
+    padding: 8px;
+  }
+}
