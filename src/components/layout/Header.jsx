@@ -9,11 +9,7 @@ const Header = () => {
   const [aboutOpen, setAboutOpen] = useState(false);
   const location = useLocation();
 
-  const toggleAbout = () => {
-    setAboutOpen(!aboutOpen);
-  };
-
-  /* 🔥 Close dropdown on route change */
+  /* Close dropdown on route change */
   useEffect(() => {
     setAboutOpen(false);
   }, [location]);
@@ -41,13 +37,17 @@ const Header = () => {
           </li>
 
           {/* ABOUT DROPDOWN */}
-          <li className="dropdown">
+          <li
+            className="dropdown"
+            onMouseEnter={() => setAboutOpen(true)}
+            onMouseLeave={() => setAboutOpen(false)}
+          >
 
-            <div className="dropdown-toggle" onClick={toggleAbout}>
+            <div className="dropdown-toggle">
               <NavLink to="/about-1">About Us</NavLink>
 
               {aboutOpen ? (
-                <FaChevronUp className="arrow-icon" />
+                <FaChevronUp className="arrow-icon rotate" />
               ) : (
                 <FaChevronDown className="arrow-icon" />
               )}
@@ -60,18 +60,30 @@ const Header = () => {
                     About the School
                   </NavLink>
                 </li>
-               <li><NavLink to="/quality-policy">Quality Policy</NavLink></li>
-               <li><NavLink to="/principal-speak">Principal Speak</NavLink></li>
-               <li><NavLink to="/board-directors">Board of Directors</NavLink></li>
+                <li>
+                  <NavLink to="/quality-policy">
+                    Quality Policy
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/principal-speak">
+                    Principal Speak
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/board-directors">
+                    Board of Directors
+                  </NavLink>
+                </li>
               </ul>
             )}
 
           </li>
 
-       <li><NavLink to="/academics">Academics</NavLink></li> 
+          <li><NavLink to="/academics">Academics</NavLink></li>
           <li><NavLink to="/admissions">Admissions</NavLink></li>
           <li><NavLink to="/mandatory-disclosure">MANDATORY DISCLOSURE</NavLink></li>
-           <li><NavLink to="/contact">CONTACT</NavLink></li>
+          <li><NavLink to="/contact">CONTACT</NavLink></li>
 
         </ul>
 
