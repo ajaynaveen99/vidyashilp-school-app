@@ -3,9 +3,10 @@ import disclosuImg from "../assets/images/disclosureImg.avif";
 
 const MandatoryDisclosure = () => {
 
-  const openPdf = (fileName) => {
-    window.open(`/pdf/${fileName}`, "_blank");
-  };
+ const openPdf = (fileId) => {
+  const url = `https://drive.google.com/file/d/${fileId}/preview`;
+  window.open(url, "_blank");
+};
 
   return (
     <section className="disclosure-page">
@@ -57,17 +58,24 @@ const MandatoryDisclosure = () => {
             </tr>
           </thead>
           <tbody>
-            <tr><td>1</td><td>COPY OF EXTENSION OF AFFILIATION</td><td><button className="view-btn" onClick={()=>openPdf("extension.pdf")}>VIEW</button></td></tr>
-            <tr><td>2</td><td>COPY OF SOCIETY REGISTRATION CERTIFICATE</td><td><button className="view-btn" onClick={()=>openPdf("society.pdf")}>VIEW</button></td></tr>
-            <tr><td>3</td><td>COPY OF NAVACHETANA FOUNDATION MEMBERS</td><td><button className="view-btn" onClick={()=>openPdf("foundation.pdf")}>VIEW</button></td></tr>
-            <tr><td>4</td><td>COPY OF BUILDING SAFETY CERTIFICATE</td><td><button className="view-btn" onClick={()=>openPdf("building.pdf")}>VIEW</button></td></tr>
-            <tr><td>5</td><td>COPY OF FIRE SAFETY CERTIFICATE</td><td><button className="view-btn" onClick={()=>openPdf("fire.pdf")}>VIEW</button></td></tr>
-            <tr><td>6</td><td>COPY OF SELF CERTIFICATION BY SCHOOL</td><td><button className="view-btn" onClick={()=>openPdf("selfcert.pdf")}>VIEW</button></td></tr>
-            <tr><td>7</td><td>COPY OF SAFE DRINKING WATER CERTIFICATE</td><td><button className="view-btn" onClick={()=>openPdf("water.pdf")}>VIEW</button></td></tr>
-            <tr><td>8</td><td>COPY OF RECOGNITION ORDER</td><td><button className="view-btn" onClick={()=>openPdf("recognition.pdf")}>VIEW</button></td></tr>
-            <tr><td>9</td><td>COPY OF TEACHING NON - TEACHING STAFF LIST</td><td><button className="view-btn" onClick={()=>openPdf("staff.pdf")}>VIEW</button></td></tr>
-            <tr><td>10</td><td>COPY OF NO OBJECTION CERTIFICATE</td><td><button className="view-btn" onClick={()=>openPdf("noc.pdf")}>VIEW</button></td></tr>
-            <tr><td>11</td><td>COPY OF SCHOOL T.C.</td><td><button className="view-btn" onClick={()=>openPdf("tc.pdf")}>VIEW</button></td></tr>
+            <tr><td>1</td><td>COPY OF EXTENSION OF AFFILIATION</td><td> <button
+              className="view-btn"
+              onClick={() =>
+                openPdf("1kiQNHbCP77cn1R5EB9-oLDsUXi91Wrwj")
+              }
+            >
+              VIEW
+            </button></td></tr>
+            <tr><td>2</td><td>COPY OF SOCIETY REGISTRATION CERTIFICATE</td><td><button className="view-btn" onClick={() => openPdf("1A6sezEM7v0Ii7adAFh8SA63wlk_gAwfw")}>VIEW</button></td></tr>
+            <tr><td>3</td><td>COPY OF NAVACHETANA FOUNDATION MEMBERS</td><td><button className="view-btn" onClick={() => openPdf("foundation.pdf")}>VIEW</button></td></tr>
+            <tr><td>4</td><td>COPY OF BUILDING SAFETY CERTIFICATE</td><td><button className="view-btn" onClick={() => openPdf("building.pdf")}>VIEW</button></td></tr>
+            <tr><td>5</td><td>COPY OF FIRE SAFETY CERTIFICATE</td><td><button className="view-btn" onClick={() => openPdf("fire.pdf")}>VIEW</button></td></tr>
+            <tr><td>6</td><td>COPY OF SELF CERTIFICATION BY SCHOOL</td><td><button className="view-btn" onClick={() => openPdf("selfcert.pdf")}>VIEW</button></td></tr>
+            <tr><td>7</td><td>COPY OF SAFE DRINKING WATER CERTIFICATE</td><td><button className="view-btn" onClick={() => openPdf("water.pdf")}>VIEW</button></td></tr>
+            <tr><td>8</td><td>COPY OF RECOGNITION ORDER</td><td><button className="view-btn" onClick={() => openPdf("recognition.pdf")}>VIEW</button></td></tr>
+            <tr><td>9</td><td>COPY OF TEACHING NON - TEACHING STAFF LIST</td><td><button className="view-btn" onClick={() => openPdf("staff.pdf")}>VIEW</button></td></tr>
+            <tr><td>10</td><td>COPY OF NO OBJECTION CERTIFICATE</td><td><button className="view-btn" onClick={() => openPdf("noc.pdf")}>VIEW</button></td></tr>
+            <tr><td>11</td><td>COPY OF SCHOOL T.C.</td><td><button className="view-btn" onClick={() => openPdf("tc.pdf")}>VIEW</button></td></tr>
           </tbody>
         </table>
       </div>
@@ -85,11 +93,11 @@ const MandatoryDisclosure = () => {
             </tr>
           </thead>
           <tbody>
-            <tr><td>1</td><td>FEE STRUCTURE OF THE SCHOOL</td><td><button className="view-btn" onClick={()=>openPdf("fees.pdf")}>VIEW</button></td></tr>
-            <tr><td>2</td><td>ANNUAL ACADEMIC CALENDAR</td><td><button className="view-btn" onClick={()=>openPdf("calendar.pdf")}>VIEW</button></td></tr>
-            <tr><td>3</td><td>COPY OF HOLIDAY CALENDAR 2024 - 25</td><td><button className="view-btn" onClick={()=>openPdf("holiday.pdf")}>VIEW</button></td></tr>
-            <tr><td>4</td><td>LIST OF SCHOOL MANAGEMENT COMMITTEE</td><td><button className="view-btn" onClick={()=>openPdf("management.pdf")}>VIEW</button></td></tr>
-            <tr><td>5</td><td>LIST OF PARENTS TEACHERS ASSOCIATION MEMBERS</td><td><button className="view-btn" onClick={()=>openPdf("pta.pdf")}>VIEW</button></td></tr>
+            <tr><td>1</td><td>FEE STRUCTURE OF THE SCHOOL</td><td><button className="view-btn" onClick={() => openPdf("1xezCOZVEAKahQq71R5bvUJoWOVhJrP7v")}>VIEW</button></td></tr>
+            <tr><td>2</td><td>ANNUAL ACADEMIC CALENDAR</td><td><button className="view-btn" onClick={() => openPdf("1--bCpuqNEppvsOGeOwlY3tFRmqvubuvv")}>VIEW</button></td></tr>
+            <tr><td>3</td><td>COPY OF HOLIDAY CALENDAR 2024 - 25</td><td><button className="view-btn" onClick={() => openPdf("1SvbmBqQ6rU3Vt1sYlcXfxr6ShaQxsevE")}>VIEW</button></td></tr>
+            <tr><td>4</td><td>LIST OF SCHOOL MANAGEMENT COMMITTEE</td><td><button className="view-btn" onClick={() => openPdf("1-5RJOW5OKvgkqxVFoN42wDv2D65QP5xR")}>VIEW</button></td></tr>
+            <tr><td>5</td><td>LIST OF PARENTS TEACHERS ASSOCIATION MEMBERS</td><td><button className="view-btn" onClick={() => openPdf("1a7KSiltAT7SEryFFpLQbAcjIXlCWzH-F")}>VIEW</button></td></tr>
           </tbody>
         </table>
       </div>

@@ -9,6 +9,7 @@ import BoardDirectors from "./pages/BoardDirectors";
 import Academics from "./pages/Academics";
 import Admissions from "./pages/Admissions";
 import MandatoryDisclosure from "./pages/MandatoryDisclosure";
+import Contact from "./pages/Contact";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
   <Route path="academics" element={<Academics />} />
   <Route path="admissions" element={<Admissions />} />
   <Route path="mandatory-disclosure" element={<MandatoryDisclosure />} />
+  <Route path="contact" element={<Contact />} />
  
 
 </Route>
